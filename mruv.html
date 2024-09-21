@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora MRUV</title>
+    <link rel="stylesheet" href="./mruv.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Movimiento Rectilíneo Uniformemente Variado (MRUV)</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="method1">
+            <h2>Método 1: Cálculo de Velocidad Final</h2>
+            <form id="velocityFinalForm">
+                <label for="initialVelocity1">Velocidad Inicial (m/s):</label>
+                <input type="number" id="initialVelocity1" required>
+                <label for="acceleration1">Aceleración (m/s²):</label>
+                <input type="number" id="acceleration1" required>
+                <label for="time1">Tiempo (s):</label>
+                <input type="number" id="time1" required>
+                <button type="submit">Calcular Velocidad Final</button>
+            </form>
+            <p id="velocityFinalResult"></p>
+        </section>
+
+        <section id="method2">
+            <h2>Método 2: Cálculo de Distancia</h2>
+            <form id="distanceForm">
+                <label for="initialVelocity2">Velocidad Inicial (m/s):</label>
+                <input type="number" id="initialVelocity2" required>
+                <label for="acceleration2">Aceleración (m/s²):</label>
+                <input type="number" id="acceleration2" required>
+                <label for="time2">Tiempo (s):</label>
+                <input type="number" id="time2" required>
+                <button type="submit">Calcular Distancia</button>
+            </form>
+            <p id="distanceResult"></p>
+        </section>
+
+        <section id="method3">
+            <h2>Método 3: Cálculo de Velocidad Final (sin tiempo)</h2>
+            <form id="velocityFinalNoTimeForm">
+                <label for="initialVelocity3">Velocidad Inicial (m/s):</label>
+                <input type="number" id="initialVelocity3" required>
+                <label for="acceleration3">Aceleración (m/s²):</label>
+                <input type="number" id="acceleration3" required>
+                <label for="distance3">Distancia (m):</label>
+                <input type="number" id="distance3" required>
+                <button type="submit">Calcular Velocidad Final</button>
+            </form>
+            <p id="velocityFinalNoTimeResult"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Calculadora MRUV. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./mruv.js"></script>
+</body>
+</html>

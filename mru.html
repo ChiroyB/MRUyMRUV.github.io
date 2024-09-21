@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora MRU</title>
+    <link rel="stylesheet" href="./mru.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Movimiento Rectileneo Uniforme (MRU)</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+    </nav>
+    <div>
+
+    </div>
+    <main>
+        <section id="metodo1">
+            <h2>Método 1: Cálculo de Distancia</h2>
+            <form id="distanciaForm">
+                <label for="velo1">Velocidad (m/s):</label>
+                <input type="number" id="velo1" required>
+                <label for="tiemp1">Tiempo (s):</label>
+                <input type="number" id="tiemp1" required>
+                <button type="submit">Calcular Distancia</button>
+            </form>
+            <p id="resultdista"></p>
+        </section>
+
+        <section id="metodo2">
+            <h2>Método 2: Cálculo de Velocidad</h2>
+            <form id="velocityForm">
+                <label for="distance2">Distancia (m):</label>
+                <input type="number" id="distance2" required>
+                <label for="time2">Tiempo (s):</label>
+                <input type="number" id="time2" required>
+                <button type="submit">Calcular Velocidad</button>
+            </form>
+            <p id="velocityResult"></p>
+        </section>
+
+        <section id="metodo3">
+            <h2>Método 3: Cálculo de Tiempo</h2>
+            <form id="timeForm">
+                <label for="distance3">Distancia (m):</label>
+                <input type="number" id="distance3" required>
+                <label for="velocity3">Velocidad (m/s):</label>
+                <input type="number" id="velocity3" required>
+                <button type="submit">Calcular Tiempo</button>
+            </form>
+            <p id="timeResult"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Brandon Israel Chiroy Tuy. Universidad Mariano Galvez.</p>
+    </footer>
+
+    <script src="./mru.js"></script>
+</body>
+</html>
